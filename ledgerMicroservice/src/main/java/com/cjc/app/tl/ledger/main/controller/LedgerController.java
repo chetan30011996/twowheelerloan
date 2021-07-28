@@ -23,6 +23,7 @@ public class LedgerController {
 	@PostMapping("/addledger/{caseNo}")
 	public String addLedgerData(@PathVariable int caseNo)
 	{
+		System.out.println("Ledger added");
 		return ls.addLedgerData(caseNo);
 	}
 	
